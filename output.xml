@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221201 08:34:22.098" rpa="false" schemaversion="3">
+<suite id="s1" name="Practice" source="D:\software testing\practice.robot">
+<test id="s1-t1" name="verify if the home is reachable or not" line="8">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://icp.edu.pk</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 08:34:22.527" level="INFO">Opening browser 'chrome' to base url 'https://icp.edu.pk'.</msg>
+<status status="PASS" starttime="20221201 08:34:22.527" endtime="20221201 08:34:28.682"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 08:34:28.682" endtime="20221201 08:34:28.810"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Islamia College Peshawar</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221201 08:34:28.810" endtime="20221201 08:34:28.842"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221201 08:34:28.842" endtime="20221201 08:34:31.067"/>
+</kw>
+<status status="PASS" starttime="20221201 08:34:22.527" endtime="20221201 08:34:31.067"/>
+</test>
+<test id="s1-t2" name="verify if homepage is reachable or not" line="14">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://icp.edu.pk</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 08:34:31.067" level="INFO">Opening browser 'chrome' to base url 'https://icp.edu.pk'.</msg>
+<status status="PASS" starttime="20221201 08:34:31.067" endtime="20221201 08:34:36.932"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 08:34:36.932" endtime="20221201 08:34:37.068"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Islamia College Peshawar</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221201 08:34:37.068" endtime="20221201 08:34:37.092"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>css=#gsc-i=id1</arg>
+<arg>text</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 08:34:37.100" level="INFO">Typing text 'text' into text field 'css=#gsc-i=id1'.</msg>
+<msg timestamp="20221201 08:34:37.660" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221201 08:34:37.660" level="FAIL">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=108.0.5359.72)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010AF243]
+	(No symbol) [0x01037FD1]
+	(No symbol) [0x00F2D04D]
+	(No symbol) [0x00F2FD34]
+	(No symbol) [0x00F2FBE5]
+	(No symbol) [0x00F2FE80]
+	(No symbol) [0x00F5BD55]
+	(No symbol) [0x00F5C22B]
+	(No symbol) [0x00F8E64C]
+	(No symbol) [0x00F785D4]
+	(No symbol) [0x00F8C9EB]
+	(No symbol) [0x00F78386]
+	(No symbol) [0x00F5163C]
+	(No symbol) [0x00F5269D]
+	GetHandleVerifier [0x01349A22+2655074]
+	GetHandleVerifier [0x0133CA24+2601828]
+	GetHandleVerifier [0x01158C0A+619850]
+	GetHandleVerifier [0x01157830+614768]
+	(No symbol) [0x010405FC]
+	(No symbol) [0x01045968]
+	(No symbol) [0x01045A55]
+	(No symbol) [0x0105051B]
+	BaseThreadInitThunk [0x76498484+36]
+	RtlValidSecurityDescriptor [0x776C2EC0+448]
+	RtlValidSecurityDescriptor [0x776C2E90+400]
+</msg>
+<status status="FAIL" starttime="20221201 08:34:37.100" endtime="20221201 08:34:37.668"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221201 08:34:37.668" endtime="20221201 08:34:37.668"/>
+</kw>
+<status status="FAIL" starttime="20221201 08:34:31.067" endtime="20221201 08:34:37.668">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=108.0.5359.72)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x010AF243]
+	(No symbol) [0x01037FD1]
+	(No symbol) [0x00F2D04D]
+	(No symbol) [0x00F2FD34]
+	(No symbol) [0x00F2FBE5]
+	(No symbol) [0x00F2FE80]
+	(No symbol) [0x00F5BD55]
+	(No symbol) [0x00F5C22B]
+	(No symbol) [0x00F8E64C]
+	(No symbol) [0x00F785D4]
+	(No symbol) [0x00F8C9EB]
+	(No symbol) [0x00F78386]
+	(No symbol) [0x00F5163C]
+	(No symbol) [0x00F5269D]
+	GetHandleVerifier [0x01349A22+2655074]
+	GetHandleVerifier [0x0133CA24+2601828]
+	GetHandleVerifier [0x01158C0A+619850]
+	GetHandleVerifier [0x01157830+614768]
+	(No symbol) [0x010405FC]
+	(No symbol) [0x01045968]
+	(No symbol) [0x01045A55]
+	(No symbol) [0x0105051B]
+	BaseThreadInitThunk [0x76498484+36]
+	RtlValidSecurityDescriptor [0x776C2EC0+448]
+	RtlValidSecurityDescriptor [0x776C2E90+400]
+</status>
+</test>
+<status status="FAIL" starttime="20221201 08:34:22.098" endtime="20221201 08:34:37.676"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Practice">Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

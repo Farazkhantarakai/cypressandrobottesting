@@ -1,0 +1,19 @@
+//to check a value in the text field you have to do the following assetion
+cy.get('#textfield').shoud('have.value','Bloodbourne')
+
+//to check a field is not empty
+cy.get('#textfield').should('not.have.value')
+
+cy.get('#').should('be.visible')
+
+
+
+//how to check a  switch box is checked or not
+cy.get('#checkbox').check()
+
+
+//to get a string value
+cy.get('#text Select').contain("PYTHON")
+
+//to wait for a second 
+cy.wait(400)

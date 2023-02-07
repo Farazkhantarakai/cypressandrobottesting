@@ -1,0 +1,81 @@
+  // element is visible & enabled
+
+
+
+
+        cy.get("#txt").should("be.visible").and('be.enabled')
+        // element is checked
+        //cy.contains('Subject').and('be.checked')
+       
+
+// alias element as parent
+        cy.get('#txt').find('li').first().as('parent')
+
+        // blur input 
+        cy.get('#txt').type('abc').blur()
+
+        // checks element having class attribute checkbox
+        cy.get('.chkbox').check()
+
+        // obtains children of element n
+        cy.get('n').children()
+
+         
+        cy.contains('/Download(s|?)/').click();
+        
+    // element is visible and enabled
+    cy.get('#txt').should('be.visible').and('be.enabled')
+
+    // element is checked
+    cy.contains('Subject').and('be.checked')
+
+    // alias element as parent 
+    cy.get('#txt').find('li').first().as('parent')
+
+    // blur input
+    cy.get('#txt').type('abc').blur()
+
+
+    // checks elements having class attridbute checkbox 
+    cy.get('.chbox').check()
+
+    // removes inut abc
+    cy.get('#txt').type('abc').clear()
+
+    // clear abc cookeie
+    cy.clearCookie('abc')
+    
+    // clear all cookies 
+    cy.clearCookies()
+
+
+    // clear all local storage
+    cy.clearLocalStorage()
+
+    // click on element with id txt
+    cy.get('#txt').click();
+
+    // return elemtn in #txt having Tutor text
+    cy.get('#txt').contains('Tutor')
+
+// double clicks element with id txt 
+ct,get('#txt').dblclick()
+
+// pause to debug at the start of the command
+cy.get('#txt').debug()
+
+// iterate throught individual li
+cy.get('a').each((a) => {
+    // a.click();
+    cy.response(a['href']).should('be.equal.to')
+    (200)
+})
+
+
+cy.input('#id1',"abc");
+
+// obtain third td in tr
+cy.get('tr>td').eq(2)
+
+
+cy.exec('npm init')

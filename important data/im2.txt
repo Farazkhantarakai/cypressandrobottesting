@@ -1,0 +1,11 @@
+how to check dropdown item 
+
+//how to select a drop down item
+cy.get('#selecttool').select('Selenium').should('have.value','sel')
+
+//how to select options from multiple valuescy.get('#select_tool')
+.select(['Selenium','Cypress'])
+.invoke('val').should('deep.equal',['sel','cyp'])
+
+//to check that there is a buttonwith the text 
+cy.contains('button','Submit Form').should('be.visible').click()
